@@ -6,7 +6,7 @@ PortGroup           select 1.0
 
 name                py-ipython
 version             8.14.0
-revision            0
+revision            1
 categories-append   devel science
 license             BSD
 supported_archs     noarch
@@ -35,6 +35,7 @@ if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-appnope \
                         port:py${python.version}-backcall \
                         port:py${python.version}-decorator \
+                        port:py${python.version}-fancycompleter \
                         port:py${python.version}-jedi \
                         port:py${python.version}-matplotlib-inline \
                         port:py${python.version}-pexpect \
